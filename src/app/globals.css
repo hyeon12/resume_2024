@@ -36,6 +36,10 @@ dl, dt, dd {
   margin: 0 auto;
 }
 
+.Section {
+  background: #fff;
+}
+
 @media all and (min-width: 600px) {
   html {
     font-size: 11px;

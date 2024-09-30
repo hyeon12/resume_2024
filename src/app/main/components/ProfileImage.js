@@ -6,8 +6,9 @@ const ProfileImage = ({ className }) => {
     <div className={className}>
       <div className="layout-width">
         <div className="tit">
-          <span>RESUME</span>
-          서정현
+          <p className="subname1">신입 개발자</p>
+          <span>서 정 현</span>
+          <p className="subname2">Seo JungHyeon</p>
         </div>
       </div>
     </div>
@@ -15,7 +16,8 @@ const ProfileImage = ({ className }) => {
 };
 
 const StyledProfileImage = styled(ProfileImage)`
-  background: #eae4dd;
+  background: #eae4dd url('/images/myimg.png') no-repeat calc(50% + 200px)
+    bottom;
   height: 350px;
   padding: 50px 30px 10px;
   position: relative;
@@ -23,11 +25,20 @@ const StyledProfileImage = styled(ProfileImage)`
   .tit {
     position: absolute;
     bottom: 10px;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
 
     span {
-      font-size: 1.65rem;
+      font-size: 2.5rem;
       margin-right: 10px;
+    }
+    .subname1 {
+      margin-bottom: 5px;
+      color: #777;
+    }
+
+    .subname2 {
+      color: #888;
+      margin-top: 5px;
     }
   }
 `;

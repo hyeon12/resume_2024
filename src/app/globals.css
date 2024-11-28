@@ -1,13 +1,14 @@
 * {
   box-sizing: border-box;
   outline: none;
-  font-family: "Gowun Dodum", system-ui;
+  font-family: "Noto Sans KR", serif;
+  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
 
 html {
-  font-size: 13px;
+  font-size: 15px;
   color: #000;
 }
 
@@ -20,19 +21,22 @@ a {
   color: #000;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-dl, dt, dd {
+dl,
+dt,
+dd {
   margin: 0;
   padding: 0;
 }
 
 .layout-width {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -42,12 +46,12 @@ dl, dt, dd {
 
 @media all and (min-width: 600px) {
   html {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 
 @media all and (max-width: 460px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
 }

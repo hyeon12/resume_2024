@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const StyledNav = styled.nav`
   width: 100%;
-  background: #295f98;
+  background: #2A3663;
   border-bottom: 1px solid #cdc2a5;
 
   .layout-width {

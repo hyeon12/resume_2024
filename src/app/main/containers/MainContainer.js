@@ -5,9 +5,10 @@ import TopMenu from '../components/TopMenu';
 import InfoAbout from '../components/InfoAbout';
 import Experience from '../components/Experience';
 import Portfolio from '../components/Portfolio';
+import Skill from '../components/Skill';
 
 const options = {
-  anchors: ['sectionOne', 'sectionTwo', 'sectionThree'],
+  anchors: ['sectionOne', 'sectionTwo', 'sectionThree', 'sectionFour'],
 };
 
 const MainContainer = () => {
@@ -16,6 +17,7 @@ const MainContainer = () => {
       <TopMenu />
       <SectionsContainer {...options}>
         <InfoAbout />
+        <Skill />
         <Experience />
         <Portfolio />
       </SectionsContainer>

@@ -16,8 +16,8 @@ const ProfileImage = ({ className }) => {
 };
 
 const StyledProfileImage = styled(ProfileImage)`
-  background: #FAF6E3 url('/images/profile.png') no-repeat calc(50% + 200px) bottom;
-  background-size: contain;
+  background: url('/images/itpre.png') no-repeat bottom;
+  background-size: cover;
   height: 270px;
   padding: 50px 60px 100px;
   position: relative;
@@ -30,21 +30,22 @@ const StyledProfileImage = styled(ProfileImage)`
 
   .tit {
     position: absolute;
-    font-size: 1.75rem;
+    font-size: 2.2rem;
     bottom: 10px;
-    left: calc(20%);
+    right: calc(20%);
+    color: #FFFFFF;
     
     span {
       margin-right: 10px;
-      font-size: 2.5rem;
+      font-size: 2.7rem;
     }
     .subname1 {
       margin-bottom: 5px;
-      color: #777;
+      color: #D1D1D1;
     }
 
     .subname2 {
-      color: #888;
+      color: #D1D1D1;
       margin-top: 5px;
     }
   }

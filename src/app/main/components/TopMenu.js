@@ -35,8 +35,9 @@ const TopMenu = () => {
       <StyledNav>
         <div className="layout-width">
           <a href="#sectionOne">INFO & ABOUT</a>
-          <a href="#sectionTwo">EXPERIENCE</a>
-          <a href="#sectionThree">PORTFOLIO</a>
+          <a href="#sectionTwo">SKILLS</a>
+          <a href="#sectionThree">EXPERIENCE</a>
+          <a href="#sectionFour">PROJECTS</a>
         </div>
       </StyledNav>
     </Header>

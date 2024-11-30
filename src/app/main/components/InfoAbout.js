@@ -1,17 +1,37 @@
 import React from 'react';
 import { Section } from 'react-fullpage';
+import Link from 'next/link';
 import ProfileImage from './ProfileImage';
 import styled from 'styled-components';
 import Item from './Item';
 import { BsFillPersonFill, BsFillTelephoneFill, BsCalendar2CheckFill } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import { MdSchool } from "react-icons/md";
+import { PiCursorClickBold } from "react-icons/pi";
+
+function GithubLink() {
+  return (
+    <Link href="https://github.com/hyeon12" className='active'>
+      <PiCursorClickBold /> 깃허브 링크 (github.com/hyeon12)
+    </Link>
+  );
+}
+
+// 노션 링크 컴포넌트
+function NotionLink() {
+  return (
+    <Link href="https://www.notion.so/MySTUDY-1298e6d3a7238044b602d43bbce4582e?pvs=4" className='active'>
+      <PiCursorClickBold /> 노션 링크 (notion.so/MyStudy)
+    </Link>
+  );
+}
 
 const Wrapper = styled.div`
   padding-top: 51px;
   .inner {
     display: flex;
     flex-wrap: wrap;
+    font-size: 1.3rem;
 
     .item {
       width: 0;
@@ -31,8 +51,23 @@ const Wrapper = styled.div`
         font-size: 1.5rem;
       }
 
-      .sub {
-        font-size: 1.3rem;
+      .linkbox {
+        border: 4px solid #ddd;
+        border-radius: 9px;
+        padding: 15px;
+        margin-top: 25px;
+
+        a{
+          display: block;
+        }
+
+        a:hover {
+          color: blue;
+        }
+
+        a + a {
+          margin-top: 5px;
+        }
       }
 
       .sub-info {
@@ -44,9 +79,18 @@ const Wrapper = styled.div`
       }
 
       .sub-info svg {
-        height: 25px; /* 아이콘의 높이를 100px로 설정 */
-        width: auto; /* 비율에 맞게 너비 자동 조정 */
-        margin-right: 15px; /* 아이콘과 텍스트 사이에 간격 추가 */
+        height: 25px;
+        width: auto;
+        margin-right: 15px;
+      }
+
+      .profile {
+        position: absolute;
+        margin-top: 150px;
+        margin-left: 300px;
+        box-shadow: 7px 7px 7px #DCDCDC;
+        border-radius: 1px;
+        height: 220px;
       }
 
       .sub2 {
@@ -79,8 +123,11 @@ const InfoAbout = () => {
             <div className="inner2">
               <p className="main">성장시키던 교사에서, 스스로 성장하는 개발자로!</p>
               <p className="sub">우연한 기회로 JAVA 의 매력에 빠져 코딩을 시작하며<br />다양한 시도 끝에 풀스택 개발자를 꿈꾸게 되었습니다.</p>
-              <p className="sub">CHECK LIST</p>
-              <p className="sub">✅Notion을 운영하며 다양한 주제를 포스팅 중입니다.</p>
+              <p className="sub">✅ Notion을 운영하며 다양한 주제를 포스팅합니다.</p>
+              <p className="sub">✅ 프로그래머스 문제 풀이로 실력을 향상시키고 있습니다.</p>
+              <p className="sub">✅ 실패를 배움의 기회로 삼고 앞으로 나아가고자 합니다.</p>
+              <div className="linkbox"><GithubLink />
+                <NotionLink /></div>
             </div>
           </Item>
           <Item title="ABOUT">
@@ -91,6 +138,7 @@ const InfoAbout = () => {
                   <p className="sub2">이름</p>
                   <p className="sub3">서정현</p>
                 </div>
+                <img src="/images/profile.png" alt="Profile" className="profile" />
               </div>
               <div className="sub-info">
                 <BsCalendar2CheckFill />

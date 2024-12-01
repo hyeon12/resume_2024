@@ -26,7 +26,7 @@ const Wrapper = styled.div`
   .content-box {
     margin: 15px 25px 0 25px;
     padding: 5px 5px 5px 25px; 
-    background-color: #F4A460;
+    background-color: #FAFAD2;
     border-radius: 9px;
     box-shadow: 5px 5px 5px #dcdcdc;
   }

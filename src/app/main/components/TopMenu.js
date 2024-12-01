@@ -5,8 +5,8 @@ import styled from 'styled-components';
 
 const StyledNav = styled.nav`
   width: 100%;
-  background: #2A3663;
-  border-bottom: 1px solid #cdc2a5;
+  background: #000033;
+  border-bottom: 1px solid #000033;
 
   .layout-width {
     display: flex;
@@ -17,6 +17,10 @@ const StyledNav = styled.nav`
       line-height: 50px;
       padding: 0 30px;
       font-size: 1.75rem;
+    }
+
+    a:hover {
+      color: #ffffcc;
     }
 
     @media all and (max-width: 460px) {

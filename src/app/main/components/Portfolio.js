@@ -9,6 +9,9 @@ const Tab1Content = () => {
     <>
       <div className="project-box">
         <p>2024.09.02 ~ 2024.09.26 (1 Month) </p>
+        <img src="/images/nonnull1.png" width="300" height="225" alt="nonnull1" />
+        <img src="/images/nonnull2.png" width="300" height="225" alt="nonnull2" />
+        <br />
         <ul>
           <li>기존의 연구논문 사이트에 관심논문 추천 및 트렌드분석 서비스를 확장한 웹사이트</li>
           <li>효율적인 AWS 배포 환경 구축을 통한 운영 최적화</li>
@@ -16,8 +19,11 @@ const Tab1Content = () => {
           <li>기업 협업 과정으로 회사에서 진행하는 프로젝트에 대한 심도 깊은 이해</li>
         </ul>
       </div>
-      <a href="https://drive.google.com/file/d/11b9kFR_KUik_d3qe6DElar_qREIlvNJB/view?usp=drive_link" target="_blank">
-        PDF 파일 열람
+      <a href="https://github.com/project34plus" target="_blank">
+        github 저장소 이동
+      </a>
+      <a href="https://drive.google.com/file/d/11b9kFR_KUik_d3qe6DElar_qREIlvNJB/view?usp=drive_link" target="_blank" className="pt">
+        내용 상세 보기
       </a>
     </>
   );
@@ -28,15 +34,21 @@ const Tab2Content = () => {
     <>
       <div className="project-box">
         <p>2024.08.01 ~ 2024.08.31 (1 Month)</p>
+        <img src="/images/joy1.png" width="300" height="225" alt="joy1" />
+        <img src="/images/joy2.png" width="300" height="225" alt="joy2" />
+        <br />
         <ul>
           <li>지역 축제, 여행지에 대한 정보 제공으로 농촌지역 방문객 증가 장려를 위해 개발</li>
           <li>MSA 방식으로 서비스 분리 및 개발 유연성 강화</li>
           <li>Git 조직 관리 경험으로 Git에 대한 이해 향상</li>
+          <li>DB 설계 및 엑셀 데이터를 데이터베이스 변환</li>
         </ul>
       </div>
-      <a href="https://drive.google.com/file/d/16lgwpWBquuEOxkPjKtSn2upZaLTW5cAX/view?usp=drive_link" target="_blank">
-        포트폴리오 보기
+      <a href="https://github.com/farmstival" target="_blank" className="git">
+        github 저장소 이동
       </a>
+      <a href="https://drive.google.com/file/d/16lgwpWBquuEOxkPjKtSn2upZaLTW5cAX/view?usp=drive_link" target="_blank" className="pt">
+        내용 상세 보기      </a>
     </>
   );
 };
@@ -46,15 +58,21 @@ const Tab3Content = () => {
     <>
       <div className="project-box">
         <p>2024.06.24 ~ 2024.07.04 (11 Days) </p>
+        <img src="/images/poke1.png" width="300" height="225" alt="poke1" />
+        <img src="/images/poke2.png" width="300" height="225" alt="poke2" />
+        <br />
         <ul>
           <li>협업의 즐거움과 소통의 중요성을 느꼈던 프로젝트</li>
           <li>최초 웹 개발 경험(Tomcat, Gradle, Java, Oracle)</li>
           <li>최초 협업 경험(Git)</li>
         </ul>
       </div>
-      <a href="https://drive.google.com/file/d/1cfQTmiYnf08azBnSlA8EOVyuVVj9qYFN/view?usp=drive_link" target="_blank">
-        포켓몬 도감 PPT
+      <a href="https://github.com/hyeon12/project_pokemon" target="_blank" className="git">
+        github 저장소 이동
       </a>
+      <a href="https://drive.google.com/file/d/1cfQTmiYnf08azBnSlA8EOVyuVVj9qYFN/view?usp=drive_link" target="_blank" className="pt">
+        내용 상세 보기      </a>
+
     </>
   );
 };
@@ -75,31 +93,73 @@ const items = {
 };
 
 const Wrapper = styled.div`
-  padding-top: 100px;
+  padding-top: 51px;
 
   .tab-group {
     display: flex;
     height: 45px;
-    border-bottom: 2px solid #000;
 
     li {
+      width: calc(33.5%);
+      text-align: center;
       padding: 0 25px;
       cursor: pointer;
-      border: 1px solid #000;
+      border: 1px solid #EEE;
       border-bottom: 0;
-      margin-right: 5px;
       line-height: 42px;
       font-size: 1.4rem;
     }
 
     li.on {
-      background: #000;
-      color: #fff;
+      background: #FAFAD2;
+      color: #000033;
     }
   }
 
   .tab-content {
-    padding: 20px;
+    background: #FAFAD2;
+    box-shadow: 5px 5px 5px #ddd;
+    padding: 10px 20px 17px 20px;
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+
+    .title{
+      font-size: 1.6rem;
+    }
+
+    img {
+      margin-right: 15px;
+    }
+
+    p {
+      padding-bottom: 3px;
+      border-bottom: 1px solid #BBB;
+    }
+
+    li {
+      list-style-type: square;
+      margin-left : 20px;
+      padding-bottom: 10px;
+    }
+
+    ul li:last-child {
+      margin-bottom: 10px;
+    }
+
+    a {
+      width: 100px;
+      padding: 8px;
+      margin-right: 10px;
+      border-radius: 8px;
+      border: 2px solid #000;
+      background: #fff;
+      color: #000;
+    }
+
+    a:hover {
+      background: #000033;
+      color: #fff;
+    }
   }
 `;
 
@@ -118,7 +178,6 @@ const Portfolio = () => {
     <Section>
       <Wrapper className="layout-width">
         <h2>PROJECTS</h2>
-
         <ul className="tab-group">
           <li
             onClick={() => onClick('tab1')}

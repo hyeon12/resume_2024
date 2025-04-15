@@ -4,6 +4,7 @@ import Link from 'next/link';
 import ProfileImage from './ProfileImage';
 import styled from 'styled-components';
 import Item from './Item';
+import Image from 'next/image';
 import { BsFillPersonFill, BsFillTelephoneFill, BsCalendar2CheckFill } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import { MdSchool } from "react-icons/md";
@@ -138,7 +139,7 @@ const InfoAbout = () => {
                   <p className="sub2">이름</p>
                   <p className="sub3">서정현</p>
                 </div>
-                <img src="/images/profile.png" alt="Profile" className="profile" />
+                <Image src="/images/profile.png" alt="Profile" className="profile" />
               </div>
               <div className="sub-info">
                 <BsCalendar2CheckFill />

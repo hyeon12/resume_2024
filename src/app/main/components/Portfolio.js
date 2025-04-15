@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { Section } from 'react-fullpage';
-import Image from 'next/image';
+import Image from 'next/image'
 import styled from 'styled-components';
 import classNames from 'classnames';
 
@@ -9,8 +9,8 @@ const Tab1Content = () => {
     <>
       <div className="project-box">
         <p>2024.09.02 ~ 2024.09.26 (1 Month) </p>
-        <img src="/images/nonnull1.png" width="300" height="225" alt="nonnull1" />
-        <img src="/images/nonnull2.png" width="300" height="225" alt="nonnull2" />
+        <Image src="/images/nonnull1.png" width="300" height="225" alt="nonnull1" />
+        <Image src="/images/nonnull2.png" width="300" height="225" alt="nonnull2" />
         <br />
         <ul>
           <li>기존의 연구논문 사이트에 관심논문 추천 및 트렌드분석 서비스를 확장한 웹사이트</li>
@@ -34,8 +34,8 @@ const Tab2Content = () => {
     <>
       <div className="project-box">
         <p>2024.08.01 ~ 2024.08.31 (1 Month)</p>
-        <img src="/images/joy1.png" width="300" height="225" alt="joy1" />
-        <img src="/images/joy2.png" width="300" height="225" alt="joy2" />
+        <Image src="/images/joy1.png" width="300" height="225" alt="joy1" />
+        <Image src="/images/joy2.png" width="300" height="225" alt="joy2" />
         <br />
         <ul>
           <li>지역 축제, 여행지에 대한 정보 제공으로 농촌지역 방문객 증가 장려를 위해 개발</li>
@@ -58,8 +58,8 @@ const Tab3Content = () => {
     <>
       <div className="project-box">
         <p>2024.06.24 ~ 2024.07.04 (11 Days) </p>
-        <img src="/images/poke1.png" width="300" height="225" alt="poke1" />
-        <img src="/images/poke2.png" width="300" height="225" alt="poke2" />
+        <Image src="/images/poke1.png" width="300" height="225" alt="poke1" />
+        <Image src="/images/poke2.png" width="300" height="225" alt="poke2" />
         <br />
         <ul>
           <li>협업의 즐거움과 소통의 중요성을 느꼈던 프로젝트</li>
@@ -127,7 +127,7 @@ const Wrapper = styled.div`
       font-size: 1.6rem;
     }
 
-    img {
+    Image {
       margin-right: 15px;
     }
 
